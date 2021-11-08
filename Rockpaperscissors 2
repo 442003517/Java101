@@ -1,0 +1,53 @@
+import java.util.Scanner;
+import java.util.Random;
+
+
+class RockpaperSc {
+  public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
+    Random rnd = new Random();
+    int R = 1;
+    int P = 2;
+    int S = 3;
+    int US,CC;
+    do{
+      System.out.println(" enter yor choice \n 1: Rock \n 2:Paper \n 3: Scissorse");
+      US = scan.nextInt();
+      CC = rnd.nextInt(3) + 1 ;
+
+      if(US == R){
+        if(CC == R){
+          System.out.println("Rock vs Rock :  is tie");
+        }
+        else if (CC == P){
+          System.out.println("Rock vs Paper : you Lose");
+        }
+        else if (CC == S){
+          System.out.println("Rock vs Scissorse : You Win");
+        }
+      }
+      if(US == P){
+        if(CC == P){
+          System.out.println("Paper vs Paper :  is tie");
+        }
+        else if (CC == S){
+          System.out.println("Rock vs Paper : you Lose");
+        }
+        else if (CC == R){
+          System.out.println("Rock vs Scissorse : You Win");
+        }
+      }
+       if(US == S){
+        if(CC == S){
+          System.out.println("Scissorse vs Scissorse :  is tie");
+        }
+        else if (CC == P){
+          System.out.println("Scissorse vs Paper : you Win");
+        }
+        else if (CC == R){
+          System.out.println("Scissorse vs Rock : You Lose");
+        }
+      }
+    }while (US > 0);
+  }
+}
