@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Random;
 
-
+//cheating
 class RockpaperSc {
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
